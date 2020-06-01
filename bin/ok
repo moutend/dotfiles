@@ -1,0 +1,7 @@
+#!/bin/bash
+
+if [[ $1 -eq 0 ]]; then
+  play ~/.codespeak/sound/right.wav 2> /dev/null &
+else
+  play ~/.codespeak/sound/wrong.wav 2> /dev/null &
+fi

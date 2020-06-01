@@ -1,0 +1,9 @@
+#!/usr/bin/env ruby
+
+exit if File.file? "#{ENV['HOME']}/.noodled"
+now = Time.now
+if now.min == 0
+  `say -v Kyoko -r 210 #{now.hour}時です。`
+else
+  `say -v Kyoko -r 210 #{now.hour}時、#{now.min}分です。`
+end

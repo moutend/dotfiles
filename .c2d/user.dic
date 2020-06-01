@@ -1,0 +1,376 @@
+Unicode 全角数字 (0xFF10...)
+０	[[ pbas 200 ]]0
+１	[[ pbas 200 ]]1
+２	[[ pbas 200 ]]2
+３	[[ pbas 200 ]]3
+４	[[ pbas 200 ]]4
+５	[[ pbas 200 ]]5
+６	[[ pbas 200 ]]6
+７	[[ pbas 200 ]]7
+８	[[ pbas 200 ]]8
+９	[[ pbas 200 ]]9
+
+# Unicode ひらがな (0x3041...0x3096)
+ぁ	ぁ
+あ	あ
+ぃ	ぃ
+い	い
+ぅ	ぅ
+う	う
+ぇ	ぇ
+え	え
+ぉ	ぉ
+お	お
+か	か
+が	が
+き	き
+ぎ	ぎ
+く	く
+ぐ	ぐ
+け	け
+げ	げ
+こ	こ
+ご	ご
+さ	さ
+ざ	ざ
+し	し
+じ	じ
+す	す
+ず	ず
+せ	せ
+ぜ	ぜ
+そ	そ
+ぞ	ぞ
+た	た
+だ	だ
+ち	ち
+ぢ	ぢ
+っ	っ
+つ	つ
+づ	づ
+て	て
+で	で
+と	と
+ど	ど
+な	な
+に	に
+ぬ	ぬ
+ね	ね
+の	の
+は	は
+ば	ば
+ぱ	ぱ
+ひ	ひ
+び	び
+ぴ	ぴ
+ふ	ふ
+ぶ	ぶ
+ぷ	ぷ
+へ	へ
+べ	べ
+ぺ	ぺ
+ほ	ほ
+ぼ	ぼ
+ぽ	ぽ
+ま	ま
+み	み
+む	む
+め	め
+も	も
+ゃ	ゃ
+や	や
+ゅ	ゅ
+ゆ	ゆ
+ょ	ょ
+よ	よ
+ら	ら
+り	り
+る	る
+れ	れ
+ろ	ろ
+ゎ	ゎ
+わ	わ
+ゐ	ゐ
+ゑ	ゑ
+を	を
+ん	ん
+ゔ	ゔ
+ゕ	ゕ
+
+# Unicode カタカナ (0x30A1...0x30FA)
+ァ	[[ pbas 200 ]]ァ
+ア	[[ pbas 200 ]]ア
+ィ	[[ pbas 200 ]]ィ
+イ	[[ pbas 200 ]]イ
+ゥ	[[ pbas 200 ]]ゥ
+ウ	[[ pbas 200 ]]ウ
+ェ	[[ pbas 200 ]]ェ
+エ	[[ pbas 200 ]]エ
+ォ	[[ pbas 200 ]]ォ
+オ	[[ pbas 200 ]]オ
+カ	[[ pbas 200 ]]カ
+ガ	[[ pbas 200 ]]ガ
+キ	[[ pbas 200 ]]キ
+ギ	[[ pbas 200 ]]ギ
+ク	[[ pbas 200 ]]ク
+グ	[[ pbas 200 ]]グ
+ケ	[[ pbas 200 ]]ケ
+ゲ	[[ pbas 200 ]]ゲ
+コ	[[ pbas 200 ]]コ
+ゴ	[[ pbas 200 ]]ゴ
+サ	[[ pbas 200 ]]サ
+ザ	[[ pbas 200 ]]ザ
+シ	[[ pbas 200 ]]シ
+ジ	[[ pbas 200 ]]ジ
+ス	[[ pbas 200 ]]ス
+ズ	[[ pbas 200 ]]ズ
+セ	[[ pbas 200 ]]セ
+ゼ	[[ pbas 200 ]]ゼ
+ソ	[[ pbas 200 ]]ソ
+ゾ	[[ pbas 200 ]]ゾ
+タ	[[ pbas 200 ]]タ
+ダ	[[ pbas 200 ]]ダ
+チ	[[ pbas 200 ]]チ
+ヂ	[[ pbas 200 ]]ヂ
+ッ	[[ pbas 200 ]]ッ
+ツ	[[ pbas 200 ]]ツ
+ヅ	[[ pbas 200 ]]ヅ
+テ	[[ pbas 200 ]]テ
+デ	[[ pbas 200 ]]デ
+ト	[[ pbas 200 ]]ト
+ド	[[ pbas 200 ]]ド
+ナ	[[ pbas 200 ]]ナ
+ニ	[[ pbas 200 ]]ニ
+ヌ	[[ pbas 200 ]]ヌ
+ネ	[[ pbas 200 ]]ネ
+ノ	[[ pbas 200 ]]ノ
+ハ	[[ pbas 200 ]]ハ
+バ	[[ pbas 200 ]]バ
+パ	[[ pbas 200 ]]パ
+ヒ	[[ pbas 200 ]]ヒ
+ビ	[[ pbas 200 ]]ビ
+ピ	[[ pbas 200 ]]ピ
+フ	[[ pbas 200 ]]フ
+ブ	[[ pbas 200 ]]ブ
+プ	[[ pbas 200 ]]プ
+ヘ	[[ pbas 200 ]]ヘ
+ベ	[[ pbas 200 ]]ベ
+ペ	[[ pbas 200 ]]ペ
+ホ	[[ pbas 200 ]]ホ
+ボ	[[ pbas 200 ]]ボ
+ポ	[[ pbas 200 ]]ポ
+マ	[[ pbas 200 ]]マ
+ミ	[[ pbas 200 ]]ミ
+ム	[[ pbas 200 ]]ム
+メ	[[ pbas 200 ]]メ
+モ	[[ pbas 200 ]]モ
+ャ	[[ pbas 200 ]]ャ
+ヤ	[[ pbas 200 ]]ヤ
+ュ	[[ pbas 200 ]]ュ
+ユ	[[ pbas 200 ]]ユ
+ョ	[[ pbas 200 ]]ョ
+ヨ	[[ pbas 200 ]]ヨ
+ラ	[[ pbas 200 ]]ラ
+リ	[[ pbas 200 ]]リ
+ル	[[ pbas 200 ]]ル
+レ	[[ pbas 200 ]]レ
+ロ	[[ pbas 200 ]]ロ
+ヮ	[[ pbas 200 ]]ヮ
+ワ	[[ pbas 200 ]]ワ
+ヰ	[[ pbas 200 ]]ヰ
+ヱ	[[ pbas 200 ]]ヱ
+ヲ	[[ pbas 200 ]]ヲ
+ン	[[ pbas 200 ]]ン
+ヴ	[[ pbas 200 ]]ヴ
+ヵ	[[ pbas 200 ]]ヵ
+ヶ	[[ pbas 200 ]]ヶ
+ヷ	[[ pbas 200 ]]ヷ
+ヸ	[[ pbas 200 ]]ヸ
+ヹ	[[ pbas 200 ]]ヹ
+
+# Unicode 全角アルファベット大文字 (0xFF21...)
+Ａ	[[ pbas 200 ]]（全角）A
+Ｂ	[[ pbas 200 ]]（全角）B
+Ｃ	[[ pbas 200 ]]（全角）C
+Ｄ	[[ pbas 200 ]]（全角）D
+Ｅ	[[ pbas 200 ]]（全角）E
+Ｆ	[[ pbas 200 ]]（全角）F
+Ｇ	[[ pbas 200 ]]（全角）G
+Ｈ	[[ pbas 200 ]]（全角）H
+Ｉ	[[ pbas 200 ]]（全角）I
+Ｊ	[[ pbas 200 ]]（全角）J
+Ｋ	[[ pbas 200 ]]（全角）K
+Ｌ	[[ pbas 200 ]]（全角）L
+Ｍ	[[ pbas 200 ]]（全角）M
+Ｎ	[[ pbas 200 ]]（全角）N
+Ｏ	[[ pbas 200 ]]（全角）O
+Ｐ	[[ pbas 200 ]]（全角）P
+Ｑ	[[ pbas 200 ]]（全角）Q
+Ｒ	[[ pbas 200 ]]（全角）R
+Ｓ	[[ pbas 200 ]]（全角）S
+Ｔ	[[ pbas 200 ]]（全角）T
+Ｕ	[[ pbas 200 ]]（全角）U
+Ｖ	[[ pbas 200 ]]（全角）V
+Ｗ	[[ pbas 200 ]]（全角）W
+Ｘ	[[ pbas 200 ]]（全角）X
+Ｙ	[[ pbas 200 ]]（全角）Y
+Ｚ	[[ pbas 200 ]]（全角）Z
+
+# Unicode 全角アルファベット小文字(0xFF41...)
+ａ	（全角）a
+ｂ	（全角）b
+ｃ	（全角）c
+ｄ	（全角）d
+ｅ	（全角）e
+ｆ	（全角）f
+ｇ	（全角）g
+ｈ	（全角）h
+ｉ	（全角）i
+ｊ	（全角）j
+ｋ	（全角）k
+ｌ	（全角）l
+ｍ	（全角）m
+ｎ	（全角）n
+ｏ	（全角）o
+ｐ	（全角）p
+ｑ	（全角）q
+ｒ	（全角）r
+ｓ	（全角）s
+ｔ	（全角）t
+ｕ	（全角）u
+ｖ	（全角）v
+ｗ	（全角）w
+ｘ	（全角）x
+ｙ	（全角）y
+ｚ	（全角）z
+
+# ASCII alphabet (upper case)
+A	[[ pbas 200 ]]A
+B	[[ pbas 200 ]]B
+C	[[ pbas 200 ]]C
+D	[[ pbas 200 ]]D
+E	[[ pbas 200 ]]E
+F	[[ pbas 200 ]]F
+G	[[ pbas 200 ]]G
+H	[[ pbas 200 ]]H
+I	[[ pbas 200 ]]I
+J	[[ pbas 200 ]]J
+K	[[ pbas 200 ]]K
+L	[[ pbas 200 ]]L
+M	[[ pbas 200 ]]M
+N	[[ pbas 200 ]]N
+O	[[ pbas 200 ]]O
+P	[[ pbas 200 ]]P
+Q	[[ pbas 200 ]]Q
+R	[[ pbas 200 ]]R
+S	[[ pbas 200 ]]S
+T	[[ pbas 200 ]]T
+U	[[ pbas 200 ]]U
+V	[[ pbas 200 ]]V
+W	[[ pbas 200 ]]W
+X	[[ pbas 200 ]]X
+Y	[[ pbas 200 ]]Y
+Z	[[ pbas 200 ]]Z
+
+# ASCII alphabet (lower case)
+a	A
+b	B
+c	C
+d	D
+e	E
+f	F
+g	G
+h	H
+i	I
+j	J
+k	K
+l	L
+m	M
+n	N
+o	O
+p	P
+q	Q
+r	R
+s	S
+t	T
+u	U
+v	V
+w	W
+x	X
+y	Y
+z	Z
+
+# ASCII numeric
+0	zero
+1	one
+2	two
+3	three
+4	four
+5	five
+6	six
+7	seven
+8	eight
+9	nine
+
+# ASCII symbol
+:	colon
+&	and
+"	double quote
+ 	space
+		tab
+^	carret
+/	slash
+*	star
+%	percent
+_	underscore
+|	pipe
+.	period
+,	comma
+\	backslash
+<	LT
+>	GT
+;	semicolon
+'	quote
+`	backtick
+-	minus
++	plus
+=	equal
+(	OP
+)	CP
+[	OS
+]	CS
+{	OC
+}	CC
+@	at
+!	ex
+~	tilda
+$	dollar
+?	question
+"#"	hash
+"\n"	newline
+"\r"	CR
+"\b"	bell
+# その他
+Ⅰ	1 ... ローマ数字
+Ⅱ	2 ... ローマ数字
+Ⅲ	3 ... ローマ数字
+Ⅳ	4 ... ローマ数字
+Ⅴ	5 ... ローマ数字
+Ⅵ	6 ... ローマ数字
+Ⅶ	7 ... ローマ数字
+〒	郵便番号の記号
+…	下付き三点リーダー
+ 	NBSP
+”	double quote closing
+＃	音符のシャープ
+»	double greater than
+«	double less than
+Ω	大文字のオメガ
+（	全角のかっこ
+）	全角のかっこ閉じる
+「	かぎかっこ
+」	閉じるかぎかっこ
+，	全角のカンマ
+・	中黒
+·	おそらく中黒
+"−": "マイナス記号？"

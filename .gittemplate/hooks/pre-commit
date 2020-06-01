@@ -1,0 +1,11 @@
+#!/bin/bash
+
+email=`git config user.email`
+pwd | grep --quiet work
+
+if [[ $? -eq 0 ]] && [[ $email == "moutend@gmail.com" ]]
+then
+  echo "Set email for work"
+  echo -e "\\a"
+  exit 1
+fi

@@ -1,0 +1,7 @@
+@echo off
+
+if "%CMD_INIT_SCRIPT_LOADED%" neq "" goto :eof
+set CMD_INIT_SCRIPT_LOADED=1
+
+set PATH=%PATH%;%USERPROFILE%\bin
+set PATH=%PATH%;%PROGRAMFILES%\7-Zip

@@ -1,0 +1,34 @@
+[credential]
+	helper = cache --timeout=604800
+
+[user]
+	name = Yoshiyuki Koyanagi
+	email = moutend@gmail.com
+
+[includeIf "gitdir:~/work/"]
+	path = ~/.gitconfigwork
+
+[includeIf "gitdir:~/sios.tech/"]
+	path = ~/.gitconfigwork
+
+[alias]
+	a = add
+	b = branch
+	c = commit
+	d = diff
+	l = log --name-status
+	co = checkout
+	sl = shortlog
+	st = status -sb
+
+[core]
+	ignorecase = false
+	editor = v
+	pager = v -
+	quotepath = false
+
+[color]
+	ui = false
+
+[init]
+	templatedir = ~/.gittemplate

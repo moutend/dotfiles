@@ -1,0 +1,24 @@
+#!/bin/bash
+
+editor='vim'
+
+if [ -e "$HOME/Applications/MacVim.app/Contents/MacOS/Vim" ]; then
+  editor=$HOME/Applications/MacVim.app/Contents/MacOS/Vim
+fi
+
+if [ -e "/Applications/MacVim.app/Contents/MacOS/Vim" ]; then
+  editor=/Applications/MacVim.app/Contents/MacOS/Vim
+fi
+
+if [[ "$@" == "" ]]; then
+  $editor
+  exit
+fi
+
+if [ -d $@ ]; then
+  echo -e '\a'
+  exit
+else
+  $editor "$@"
+  exit
+fi
