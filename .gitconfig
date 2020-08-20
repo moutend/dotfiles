@@ -11,6 +11,9 @@
 [includeIf "gitdir:~/sios.tech/"]
 	path = ~/.gitconfigwork
 
+[includeIf "gitdir:~/github.com/indigonote/"]
+	path = ~/.gitconfigwork
+
 [alias]
 	a = add
 	b = branch
@@ -19,6 +22,7 @@
 	l = log --name-status
 	co = checkout
 	sl = shortlog
+	sw = switch
 	st = status -sb
 
 [core]
