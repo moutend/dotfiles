@@ -3,6 +3,7 @@
 brew install sox
 brew install curl
 brew install direnv
+brew install git-lfs
 brew install jq
 brew install tree
 brew install pandoc
