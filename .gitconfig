@@ -22,7 +22,7 @@
 	l = log --name-status
 	co = checkout
 	sl = shortlog
-	sw = switch
+	s = switch
 	st = status -sb
 
 [core]
