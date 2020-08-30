@@ -24,6 +24,7 @@
 	sl = shortlog
 	s = switch
 	st = status -sb
+	lfspull = !git -c filter.lfs.smudge= -c filter.lfs.required=false pull && git lfs pull
 
 [core]
 	ignorecase = false
@@ -36,3 +37,9 @@
 
 [init]
 	templatedir = ~/.gittemplate
+
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
