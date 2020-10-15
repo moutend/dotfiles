@@ -2,6 +2,7 @@ echo -e '\a'
 
 source ~/.envrc
 
+alias xb='xcodebuild'
 alias c="cwd | say -r 480 &"
 alias k=kubectl
 alias gif='gofmt -l -w . && goimports -l -w .'
