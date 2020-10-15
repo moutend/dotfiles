@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+`ls *.heic`.each_line do |line|
+  line.gsub!("\n", "")
+  name = line.gsub(".heic", "")
+  `convert #{line} #{name}.jpg`
+end
