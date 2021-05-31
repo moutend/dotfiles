@@ -1,3 +1,3 @@
 #!/bin/bash
 
-open https://info.shimamura.co.jp/digital/
+open https://info.shimamura.co.jp/digital/newitem
