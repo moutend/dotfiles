@@ -1,17 +1,11 @@
-[credential]
-	helper = cache --timeout=604800
-
 [user]
 	name = Yoshiyuki Koyanagi
 	email = moutend@gmail.com
 
-[includeIf "gitdir:~/work/"]
-	path = ~/.gitconfigwork
-
-[includeIf "gitdir:~/sios.tech/"]
-	path = ~/.gitconfigwork
-
 [includeIf "gitdir:~/github.com/indigonote/"]
+	path = ~/.gitconfigwork
+
+[includeIf "gitdir:~/github.com/abby-develop/"]
 	path = ~/.gitconfigwork
 
 [alias]
