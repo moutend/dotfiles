@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
-`ls *.pdf`.split("\n").each do |filename|
-  puts "lpr -P EPSON_PX_504A #{filename}"
-  `lpr -P EPSON_PX_504A #{filename}`
+`ls *.pdf`.each_line do |filename|
+  filename = filename.gsub("\n", "")
+  puts "lpr #{filename}"
+  `lpr #{filename}`
 end
