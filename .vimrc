@@ -6,7 +6,7 @@ set encoding=utf-8
 set fileencodings=utf-8
 set fileformat=unix
 set number
-syntax on
+syntax off
 set expandtab
 set tabstop=2
 set softtabstop=2
