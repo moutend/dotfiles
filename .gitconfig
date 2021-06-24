@@ -8,6 +8,9 @@
 [includeIf "gitdir:~/github.com/abby-develop/"]
 	path = ~/.gitconfigwork
 
+[includeIf "gitdir:~/github.com/koyanagi-abby/"]
+	path = ~/.gitconfigwork
+
 [alias]
 	a = add
 	b = branch
