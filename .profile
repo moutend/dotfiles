@@ -18,3 +18,4 @@ alias df='df -ah'
 alias du='du -sh'
 alias sl='slackless'
 alias bl='backlog'
+. "$HOME/.cargo/env"
