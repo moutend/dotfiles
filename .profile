@@ -1,5 +1,7 @@
 echo -e '\a'
 
+defaults write .GlobalPreferences com.apple.sound.beep.sound "$HOME/Sounds/Glass.aiff"
+
 source ~/.envrc
 
 alias xb='xcodebuild'
