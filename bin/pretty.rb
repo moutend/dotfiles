@@ -6,5 +6,6 @@ ARGF.each do |line|
   line.gsub!(/\[([^{]*)\]{.bold}/, '\1')
   line.gsub!(/\[([^{]*)\]{.word}/, '`\1`')
   line.gsub!(/\[([^{]*)\]{.wordn}/, '`\1`')
+  line.gsub!(/\[([^{]*)\]{.kasen}/, '\1')
   puts line
 end
