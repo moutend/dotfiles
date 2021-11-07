@@ -2,11 +2,13 @@
 
 set -e
 
-rm -rf ~/.c2d
-rm -rf ~/.envrc
-rm -rf ~/.gitconfig
-rm -rf ~/.gittemplate
-rm -rf ~/.profile
-rm -rf ~/.vimrc
+rm ~/.c2d
+rm ~/.envrc
+rm ~/.gitconfig
+rm ~/.gitconfig.abby-develop
+rm ~/.gittemplate
+rm ~/.profile
+rm ~/.vimrc
+rm ~/.zshrc
+
 rm -rf ~/.vimswap
-rm -rf ~/.zshrc
