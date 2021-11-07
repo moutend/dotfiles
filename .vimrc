@@ -12,7 +12,6 @@ set tabstop=2
 set softtabstop=2
 set shiftwidth=2
 set autoindent
-set nofixendofline
 
 function KillSpeak()
   :call system("pkill say")
