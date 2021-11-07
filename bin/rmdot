@@ -1,4 +1,0 @@
-#!/bin/bash
-
-# On Mac OSX
-find . \( -name ".DS_Store" -or -name "._*" \) -print -exec rm {} ";"
