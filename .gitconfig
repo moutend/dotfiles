@@ -2,14 +2,11 @@
 	name = Yoshiyuki Koyanagi
 	email = moutend@gmail.com
 
-[includeIf "gitdir:~/github.com/indigonote/"]
-	path = ~/.gitconfigwork
-
 [includeIf "gitdir:~/github.com/abby-develop/"]
-	path = ~/.gitconfigwork
+	path = ~/.gitconfig.abby-develop
 
 [includeIf "gitdir:~/github.com/koyanagi-abby/"]
-	path = ~/.gitconfigwork
+	path = ~/.gitconfig.abby-develop
 
 [alias]
 	a = add
@@ -17,9 +14,8 @@
 	c = commit
 	d = diff
 	l = log --name-status
-	co = checkout
-	sl = shortlog
 	s = switch
+	sl = shortlog
 	st = status -sb
 	lfspull = !git -c filter.lfs.smudge= -c filter.lfs.required=false pull && git lfs pull
 
