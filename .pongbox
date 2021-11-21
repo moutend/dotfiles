@@ -1,0 +1,96 @@
+{
+  "commands": {
+    "key_1": {
+      "name": "say",
+      "args": [
+        "-r",
+        "100",
+        "One"
+      ]
+    },
+    "key_2": {
+      "name": "say",
+      "args": [
+        "-r",
+        "100",
+        "Two"
+      ]
+    },
+    "key_3": {
+      "name": "say",
+      "args": [
+        "-r",
+        "100",
+        "Three"
+      ]
+    },
+    "key_4": {
+      "name": "say",
+      "args": [
+        "-r",
+        "100",
+        "Four"
+      ]
+    },
+    "key_5": {
+      "name": "say",
+      "args": [
+        "-r",
+        "100",
+        "Five"
+      ]
+    },
+    "key_6": {
+      "name": "say",
+      "args": [
+        "-r",
+        "100",
+        "Six"
+      ]
+    },
+    "key_7": {
+      "name": "say",
+      "args": [
+        "-r",
+        "100",
+        "Seven"
+      ]
+    },
+    "key_8": {
+      "name": "say",
+      "args": [
+        "-r",
+        "100",
+        "Eight"
+      ]
+    },
+    "key_9": {
+      "name": "say",
+      "args": [
+        "-r",
+        "100",
+        "Nine"
+      ]
+    },
+    "key_0": {
+      "name": "say",
+      "args": [
+        "-r",
+        "100",
+        "Zero"
+      ]
+    },
+    "key_arrow_left": {
+      "name": "afplay",
+      "args": [
+        "/System/Library/Sounds/Glass.aiff"
+      ]
+    },
+    "key_arrow_right": {
+      "name": "afplay",
+      "args": [
+        "/System/Library/Sounds/Tink.aiff"
+      ]
+    }
+  }
+}
