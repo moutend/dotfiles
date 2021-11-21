@@ -2,6 +2,7 @@
 
 set -e
 
+rm -rf ~/.pongbox
 rm -rf ~/.c2d
 rm -rf ~/.envrc
 rm -rf ~/.gitignore

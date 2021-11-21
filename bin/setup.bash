@@ -2,6 +2,7 @@
 
 set -e
 
+ln -s ~/github.com/moutend/dotfiles/.pongbox ~/.pongbox
 ln -s ~/github.com/moutend/dotfiles/.c2d ~/.c2d
 ln -s ~/github.com/moutend/dotfiles/.envrc ~/.envrc
 ln -s ~/github.com/moutend/dotfiles/.gitignore ~/.gitignore
