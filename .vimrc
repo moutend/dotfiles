@@ -70,7 +70,6 @@ function Foo()
   :call KillSpeak()
   :call writefile([character], outputfile)
   call system("c2d -f " . outputfile . " | say -v Kyoko -r 400 &")
-  call system("rm -rf " . outputfile)
 endfunction
 
 noremap rr :call Foo()<cr>

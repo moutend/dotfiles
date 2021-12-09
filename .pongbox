@@ -80,16 +80,34 @@
         "Zero"
       ]
     },
-    "key_arrow_left": {
+    "key_arrow_up": {
       "name": "afplay",
       "args": [
         "/System/Library/Sounds/Glass.aiff"
       ]
     },
-    "key_arrow_right": {
+    "key_arrow_down": {
       "name": "afplay",
       "args": [
         "/System/Library/Sounds/Tink.aiff"
+      ]
+    },
+    "key_arrow_left": {
+      "name": "curl",
+      "args": [
+        "localhost:8080/start"
+      ]
+    },
+    "key_arrow_right": {
+      "name": "curl",
+      "args": [
+        "localhost:8080/stop"
+      ]
+    },
+    "key_r": {
+      "name": "curl",
+      "args": [
+        "localhost:8080/start"
       ]
     }
   }
