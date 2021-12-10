@@ -9,3 +9,4 @@ go install github.com/moutend/c2d/cmd/c2d@latest
 go install github.com/moutend/xor/cmd/xor@latest
 go install github.com/moutend/slack/cmd/slack@latest
 go install github.com/moutend/rmdot/cmd/rmdot@latest
+go install github.com/moutend/backlogctl/cmd/backlogctl@latest
