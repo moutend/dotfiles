@@ -1,6 +1,8 @@
 echo -e '\a'
 
-defaults write .GlobalPreferences com.apple.sound.beep.sound "$HOME/Sounds/Glass.aiff"
+if [ -d "$HOME/Sounds" ]; then
+  defaults write .GlobalPreferences com.apple.sound.beep.sound "$HOME/Sounds/Glass.aiff"
+fi
 
 source ~/.envrc
 
