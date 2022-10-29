@@ -9,7 +9,7 @@ source ~/.envrc
 alias n='noodled &'
 alias c="cwd | say -r 480 &"
 alias k=kubectl
-alias gif='gofmt -l -w . && goimports -l -w .'
+alias gif='go fmt ./... && goimports -l -w .'
 alias gt='go test -coverprofile=cover.out'
 alias gb='go build -gcflags="-e"'
 alias gi='go install'
