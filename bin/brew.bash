@@ -1,11 +1,11 @@
 #!/bin/bash
 
-brew install gsed
-brew install gawk
 brew install sox
 brew install direnv
 brew install curl
 brew install nkf
+brew install gsed
+brew install gawk
 brew install pandoc
 brew install jq
 brew install tree
