@@ -6,6 +6,7 @@ fi
 
 source ~/.envrc
 
+alias chrome='"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"'
 alias n='noodled &'
 alias c="cwd | say -r 480 &"
 alias k=kubectl
