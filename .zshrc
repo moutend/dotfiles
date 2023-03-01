@@ -28,3 +28,6 @@ if [ -f '/Users/koyanagi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/koyana
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/koyanagi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/koyanagi/google-cloud-sdk/completion.zsh.inc'; fi
+eval "$(nodenv init -)"
+eval "$(pyenv init --path)"
+eval "$(pyenv init -)"
