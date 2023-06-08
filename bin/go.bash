@@ -10,5 +10,7 @@ go install github.com/moutend/slack/cmd/slack@latest
 go install github.com/moutend/rmdot/cmd/rmdot@latest
 go install github.com/moutend/backlogctl/cmd/backlogctl@latest
 go install github.com/moutend/web/cmd/web@latest
-go install github.com/golangci/golangci-lint/cmd/golangci-lint@v1.43.0
 go install golang.org/x/tools/cmd/goimports@latest
+go install github.com/pelletier/go-toml/v2/cmd/tomljson@latest
+go install github.com/pelletier/go-toml/v2/cmd/jsontoml@latest
+go install github.com/pelletier/go-toml/v2/cmd/tomll@latest
