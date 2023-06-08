@@ -1,7 +1,7 @@
 echo -e '\a'
 
-if [ -d "$HOME/Sounds" ]; then
-  defaults write .GlobalPreferences com.apple.sound.beep.sound "$HOME/Sounds/Glass.aiff"
+if [ -d "$HOME/github.com/moutend/Sounds" ]; then
+  defaults write .GlobalPreferences com.apple.sound.beep.sound "$HOME/github.com/moutend/Sounds/Glass.aiff"
 fi
 
 source ~/.envrc
