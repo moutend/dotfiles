@@ -18,7 +18,7 @@ setopt auto_cd
 PROMPT='%# '
 
 function chpwd() {
-  cwd | say -r 720 &
+  wd.bash &
 }
 
 eval "$(direnv hook zsh)"
