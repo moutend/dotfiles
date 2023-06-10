@@ -10,7 +10,7 @@ create_home_bin_directory() {
 }
 
 create_symbolic_link() {
-  if [ ! -f "$HOME/github.com/moutend/dotfiles/$1" ]; then
+  if [ ! -e "$HOME/github.com/moutend/dotfiles/$1" ]; then
     echo "SKIP	create_symbolic_link $1"
     return 0
   fi
@@ -26,9 +26,9 @@ create_say_script() {
   say -v '?' | grep -q 'kyoko (enhanced)'
 
   if [ $? -eq 0 ]; then
-    cp "$home/github.com/moutend/dotfiles/bin/say_kyoko_enhanced.bash" "$home/bin/say.bash"
+    cp "$HOME/github.com/moutend/dotfiles/bin/say_kyoko_enhanced.bash" "$HOME/bin/say.bash"
   else
-    cp "$home/github.com/moutend/dotfiles/bin/say_kyoko.bash" "$home/bin/say.bash"
+    cp "$HOME/github.com/moutend/dotfiles/bin/say_kyoko.bash" "$HOME/bin/say.bash"
   fi
 
   echo "OK	create_say_script"
@@ -45,7 +45,7 @@ set_beep_sound() {
 
 set_beep_sound
 
-create_home_bin
+create_home_bin_directory
 create_say_script
 
 create_symbolic_link '.profile'
