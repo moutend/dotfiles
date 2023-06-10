@@ -39,7 +39,7 @@ function SayKyoko()
   let sub_str = substitute(getline('.'), "['-]", " ", "g")
 
   :call KillSpeak()
-  :call system("say -v Kyoko -r 640 '".sub_str."' &")
+  :call system("say.bash -r 640 '".sub_str."' &")
 
   return 0
 endfunction
