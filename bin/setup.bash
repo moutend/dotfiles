@@ -23,7 +23,7 @@ create_symbolic_link() {
 }
 
 create_say_script() {
-  say -v '?' | grep -q 'kyoko (enhanced)'
+  say -v '?' | grep -q 'Kyoko (Enhanced)'
 
   if [ $? -eq 0 ]; then
     cp "$HOME/github.com/moutend/dotfiles/bin/say_kyoko_enhanced.bash" "$HOME/bin/say.bash"
