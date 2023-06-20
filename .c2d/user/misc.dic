@@ -11,15 +11,15 @@ Unicode 全角数字 (0xFF10...)
 ９	[[ pbas 200 ]]9
 
 # Unicode ひらがな (0x3041...0x3096)
-ぁ	ぁ
+ぁ	小文字の「あ」
 あ	あ
-ぃ	ぃ
+ぃ	小文字の「ぃ」
 い	い
-ぅ	ぅ
+ぅ	小文字の「う」
 う	う
-ぇ	ぇ
+ぇ	小文字の「え」
 え	え
-ぉ	ぉ
+ぉ	小文字の「お」
 お	お
 か	か
 が	が
@@ -45,7 +45,7 @@ Unicode 全角数字 (0xFF10...)
 だ	だ
 ち	ち
 ぢ	ぢ
-っ	っ
+っ	小文字の「つ」
 つ	つ
 づ	づ
 て	て
@@ -77,36 +77,37 @@ Unicode 全角数字 (0xFF10...)
 む	む
 め	め
 も	も
-ゃ	ゃ
+ゃ	小文字の「や」
 や	や
-ゅ	ゅ
+ゅ	小文字の「ゆ」
 ゆ	ゆ
-ょ	ょ
+ょ	小文字の「よ」
 よ	よ
 ら	ら
 り	り
 る	る
 れ	れ
 ろ	ろ
-ゎ	ゎ
+ゎ	小文字の「わ」
 わ	わ
 ゐ	ゐ
 ゑ	ゑ
-を	を
+を	「わをん」の「を」
 ん	ん
 ゔ	ゔ
 ゕ	ゕ
 
+
 # Unicode カタカナ (0x30A1...0x30FA)
-ァ	[[ pbas 300 ]]ァ
+ァ	[[ pbas 300 ]]小文字の「あ」
 ア	[[ pbas 300 ]]ア
-ィ	[[ pbas 300 ]]ィ
+ィ	[[ pbas 300 ]]小文字の「い」
 イ	[[ pbas 300 ]]イ
-ゥ	[[ pbas 300 ]]ゥ
+ゥ	[[ pbas 300 ]]小文字の「う」
 ウ	[[ pbas 300 ]]ウ
-ェ	[[ pbas 300 ]]ェ
+ェ	[[ pbas 300 ]]小文字の「え」
 エ	[[ pbas 300 ]]エ
-ォ	[[ pbas 300 ]]ォ
+ォ	[[ pbas 300 ]]小文字の「お」
 オ	[[ pbas 300 ]]オ
 カ	[[ pbas 300 ]]カ
 ガ	[[ pbas 300 ]]ガ
@@ -132,7 +133,7 @@ Unicode 全角数字 (0xFF10...)
 ダ	[[ pbas 300 ]]ダ
 チ	[[ pbas 300 ]]チ
 ヂ	[[ pbas 300 ]]ヂ
-ッ	[[ pbas 300 ]]ッ
+ッ	[[ pbas 300 ]]小文字の「つ」
 ツ	[[ pbas 300 ]]ツ
 ヅ	[[ pbas 300 ]]ヅ
 テ	[[ pbas 300 ]]テ
@@ -164,11 +165,11 @@ Unicode 全角数字 (0xFF10...)
 ム	[[ pbas 300 ]]ム
 メ	[[ pbas 300 ]]メ
 モ	[[ pbas 300 ]]モ
-ャ	[[ pbas 300 ]]ャ
+ャ	[[ pbas 300 ]]小文字の「や」
 ヤ	[[ pbas 300 ]]ヤ
-ュ	[[ pbas 300 ]]ュ
+ュ	[[ pbas 300 ]]小文字の「ゆ」
 ユ	[[ pbas 300 ]]ユ
-ョ	[[ pbas 300 ]]ョ
+ョ	[[ pbas 300 ]]小文字の「よ」
 ヨ	[[ pbas 300 ]]ヨ
 ラ	[[ pbas 300 ]]ラ
 リ	[[ pbas 300 ]]リ
@@ -315,9 +316,9 @@ z	Z
 # ASCII symbol
 :	colon
 &	and
-"	double quote
+\"	double quote
  	space
-		tab
+\t		tab
 ^	carret
 /	slash
 *	star
@@ -326,11 +327,11 @@ _	underscore
 |	pipe
 .	period
 ,	comma
-\	backslash
+\\	backslash
 <	LT
 >	GT
 ;	semicolon
-'	quote
+\'	quote
 `	backtick
 -	minus
 +	plus
@@ -346,10 +347,11 @@ _	underscore
 ~	tilda
 $	dollar
 ?	question
-"#"	hash
-"\n"	newline
-"\r"	CR
-"\b"	bell
+\#	hash
+\n	newline
+\r	CR
+\b	bell
+
 # その他
 Ⅰ	1 ... ローマ数字
 Ⅱ	2 ... ローマ数字
