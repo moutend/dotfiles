@@ -39,7 +39,7 @@ function SayKyoko()
   let sub_str = substitute(getline('.'), "['-]", " ", "g")
 
   :call KillSpeak()
-  :call system("say.bash -r 640 '".sub_str."' &")
+  :call system("say -r 640 '".sub_str."' &")
 
   return 0
 endfunction
@@ -68,8 +68,7 @@ function Foo()
   let outputfile = $HOME . "/.vimchar"
 
   :call KillSpeak()
-  :call writefile([character], outputfile)
-  call system("c2d -f " . outputfile . " | say -v Kyoko -r 400 &")
+  call system("c2d find --languages 'ja' '" . character . "' | say -v Kyoko -r 400 &")
 endfunction
 
 noremap rr :call Foo()<cr>
