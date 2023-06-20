@@ -68,7 +68,8 @@ function Foo()
   let outputfile = $HOME . "/.vimchar"
 
   :call KillSpeak()
-  call system("c2d find --languages 'ja' '" . character . "' | say -v Kyoko -r 400 &")
+  :call writefile([character], outputfile)
+  call system("c2d find --languages 'ja' --file '" . outputfile . "' | say -v Kyoko -r 400 &")
 endfunction
 
 noremap rr :call Foo()<cr>
