@@ -15,7 +15,7 @@ set autoindent
 
 function KillSpeak()
   :call system("pkill say")
-  :call system("curl localhost:8501/v1/pause &")
+  :call system("curl 'localhost:8501/v1/pause' &")
 
   return 0
 endfunction
@@ -28,7 +28,7 @@ function BufSpeak()
 
   :call KillSpeak()
   :call writefile(line, outputfile)
-  :call system("curl localhost:8501/v1/speak&")
+  :call system("curl 'localhost:8501/v1/speak' &")
 
   return 0
 endfunction
@@ -36,10 +36,12 @@ endfunction
 noremap mv :call BufSpeak()<cr>
 
 function SayKyoko()
-  let sub_str = substitute(getline('.'), "['-]", " ", "g")
+  let input_text = substitute(getline('.'), "['-]", " ", "g")
+  let output_file = $HOME . "/.vimtext"
 
   :call KillSpeak()
-  :call system("say -r 640 '".sub_str."' &")
+  :call writefile([input_text], output_file)
+  :call system("cat " . output_file . " | say -v Kyoko -r 640 &")
 
   return 0
 endfunction
