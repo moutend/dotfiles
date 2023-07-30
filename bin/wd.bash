@@ -1,5 +1,3 @@
-#!/bin/bash
+#!/bin/zsh
 
-work_dir=$(basename $PWD)
-
-say -r 480 ${work_dir}
+basename $PWD | say -r 480 -v Kyoko
