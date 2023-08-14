@@ -1,15 +1,12 @@
 #!/usr/bin/env ruby
 
-m = {}
+`ls p*.md`.each_line do |filename|
+  elements = filename.chomp.split('-')
 
-`ls p-*.md`.each_line do |line|
-  filename = line.gsub("\n", "")
-  k = filename.split("-")[1]
-  m[k] ||= []
-  m[k].push(filename)
-end
-
-m.each do |k, v|
-  files = v.join(" ")
-  `cat #{files} > ch#{k}.md`
+  if elements.size < 2
+    puts "invalid file name: #{filename.chomp}"
+    exit 1
+  end
+  chapter = elements[1].gsub(/^0/, '').gsub(/.md$/, '')
+  `cat #{filename.chomp} >> ch#{chapter}.md`
 end
