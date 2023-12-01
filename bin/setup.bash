@@ -46,7 +46,7 @@ set_beep_sound() {
 set_beep_sound
 
 create_home_bin_directory
-create_say_script
+# create_say_script
 
 create_symbolic_link '.profile'
 create_symbolic_link '.zshrc'
@@ -54,6 +54,5 @@ create_symbolic_link '.vimrc'
 create_symbolic_link '.c2d'
 create_symbolic_link '.gitignore'
 create_symbolic_link '.gitconfig'
-create_symbolic_link '.gitconfig.abby-develop'
 
 rm -rf "$HOME/.vimswap" && mkdir "$HOME/.vimswap"
