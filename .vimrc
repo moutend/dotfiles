@@ -41,7 +41,7 @@ function SayKyoko()
 
   :call KillSpeak()
   :call writefile([input_text], output_file)
-  :call system("cat " . output_file . " | sed 's/{/左中かっこ/g' | sed 's/}/右中かっこ/g' | sed 's/\\]/右カドかっこ/g' | sed 's/\\[/左カドかっこ/g' | sed 's/\\$/（ドル記号）/g' | sed 's/\\[/ /g' | sed 's/\\]/ /g' | say -v Kyoko -r 640 &")
+  :call system("cat " . output_file . " | sed 's/{/左中かっこ/g' | sed 's/}/右中かっこ/g' | sed 's/\\]/右カドかっこ/g' | sed 's/\\[/左カドかっこ/g' | sed 's/\\$/（ドル記号）/g' | sed 's/\\[/ /g' | sed 's/\\]/ /g' | say -r 640 &")
 
   return 0
 endfunction
