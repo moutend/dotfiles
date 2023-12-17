@@ -24,14 +24,6 @@ function chpwd() {
 eval "$(direnv hook zsh)"
 
 # The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/koyanagi/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/koyanagi/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/koyanagi/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/koyanagi/google-cloud-sdk/completion.zsh.inc'; fi
-eval "$(nodenv init -)"
-eval "$(pyenv init --path)"
-eval "$(pyenv init -)"
-
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
 __conda_setup="$('/Users/koyanagi/Anaconda/anaconda3/bin/conda' 'shell.zsh' 'hook' 2> /dev/null)"
