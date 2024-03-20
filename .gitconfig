@@ -13,7 +13,7 @@
 	b = branch
 	c = commit
 	d = diff
-	l = log --name-status
+	l = log --name-status --abbrev-commit
 	s = switch
 	sl = shortlog
 	st = status -sb
