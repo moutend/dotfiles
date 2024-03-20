@@ -1,5 +1,4 @@
 source "$HOME/github.com/moutend/dotfiles/.envrc"
-source "$HOME/.cargo/env"
 
 alias chrome='"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"'
 alias gf='go fmt ./... && goimports -l -w .'
@@ -17,3 +16,4 @@ alias n='now.bash &'
 alias v='vim.bash'
 
 echo -e '\a'
+. "$HOME/.cargo/env"
