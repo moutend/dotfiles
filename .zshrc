@@ -18,6 +18,7 @@ HISTSIZE=1000000
 SAVEHIST=1000000
 
 alias c='workdir'
+alias cx='codex exec'
 alias du='du -sh'
 alias gb='go build'
 alias gf='goimports -w . && go fmt ./...'
