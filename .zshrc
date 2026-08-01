@@ -57,6 +57,10 @@ if [[ -x /Applications/ChatGPT.app/Contents/Resources ]]; then
   export PATH="/Applications/ChatGPT.app/Contents/Resources:$PATH"
 fi
 
+if [[ -x "/Applications/REAPER.app/Contents/MacOS" ]]; then
+  export PATH="/Applications/REAPER.app/Contents/MacOS:$PATH"
+fi
+
 function chpwd() {
   workdir
 }
