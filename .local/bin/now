@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+hour="$(date '+%H')"
+minute="$(date '+%M')"
+
+hour="$((10#${hour}))"
+minute="$((10#${minute}))"
+
+message="${hour}時、${minute}分です。"
+
+printf '%s\n' "${message}" | tee /dev/tty | say -r 220 &

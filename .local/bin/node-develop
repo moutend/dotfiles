@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -xeuo pipefail
+
+# Hooks for login shell
+cat << 'EOF' > $HOME/.nodejs-bashrc
+PS1='\$ '
+echo -e '\a'
+EOF
+
+docker run -it --rm --name nodejs-development-container \
+  -p 8976:8976 \
+  -v .:/app \
+  -v "$HOME/.nodejs-bashrc:/root/.bashrc:ro" \
+  --entrypoint /bin/bash \
+  node-develop

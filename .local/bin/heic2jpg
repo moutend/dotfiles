@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+Dir.glob("*.heic").each do |input|
+  output = File.basename(input, ".heic") + ".jpg"
+  system("convert", input, output)
+end

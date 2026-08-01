@@ -1,0 +1,62 @@
+Category,Action,Shortcut(s)
+選択,下のアイテムを選択,下矢印キー
+選択,上のアイテムを選択,上矢印キー
+選択,右のアイテムを選択,右矢印キー
+選択,左のアイテムを選択,左矢印キー
+選択,アイテムを選択 / 選択解除,Shift+Space
+選択,選択を下に拡張,Shift+下矢印キー
+選択,選択を上に拡張,Shift+上矢印キー
+選択,選択を右に拡張,Shift+右矢印キー
+選択,選択を左に拡張,Shift+左矢印キー
+選択,選択を変更せずに下へ移動,Command+下矢印キー
+選択,選択を変更せずに上へ移動,Command+上矢印キー
+選択,選択を変更せずに右へ移動,Command+右矢印キー
+選択,選択を変更せずに左へ移動,Command+左矢印キー
+選択,表示されているすべてのアイテムを選択,Command+A
+選択,すべての選択を解除,Esc
+移動,ナビゲーションパネル,Option+G then N / Option+G then F
+移動,アイテムビュー,Option+G then I
+移動,ページのコンテンツ,Option+G then C
+移動,詳細 / 履歴 / 承認パネル,Option+G then D
+移動,アップロード状況,Option+G then U
+移動,ダウンロード状況,Option+G then A
+移動,ページの先頭,Option+G then T
+移動,パス内の 1 つ上のフォルダに移動,Option+G then P / Option+上矢印キー
+移動,Google Workspace サイドバーに移動,"Option+Command+,"
+移動,次の領域,Command+F6
+移動,前の領域,Shift+Command+F6
+移動,フィルタ ツールバーを開く,Shift+Command+F
+アプリケーション,キーボード ショートカットを表示します,Command+/
+アプリケーション,詳細ウィンドウを表示 / 非表示,Option+V then D
+アプリケーション,履歴パネルを表示 / 非表示,Option+V then A
+アプリケーション,承認パネルを表示 / 非表示,Option+V then E
+アプリケーション,ギャラリー表示とリスト表示を切り替え,Option+V then L
+アプリケーション,ドライブを検索,/
+アプリケーション,検索候補で検索を実施します,'
+アプリケーション,次の表示サイズ（行の高さと要素の間隔）を選択,Ctrl+T then Q
+アプリケーション,最後のメッセージを表示,Option+G then K
+作成,フォルダ,Ctrl+C then F
+作成,ドキュメント,Ctrl+C then T
+作成,プレゼンテーション,Ctrl+C then P
+作成,スプレッドシート,Ctrl+C then S
+作成,フォーム,Ctrl+C then O
+作成,図形描画,Ctrl+C then D
+アップロード,ファイルをアップロード,Ctrl+C then U
+アップロード,フォルダをアップロード,Ctrl+C then I
+メニュー,新規作成,Ctrl+N
+メニュー,その他の操作,Ctrl+A / Shift+F10
+メニュー,現在のフォルダの操作,Ctrl+Shift+A
+メニュー,並べ替え,Ctrl+R
+メニュー,設定,Shift+Command+S
+操作,アイテムを開く,Return
+操作,新しいタブでアイテムを開く,Command+Return
+操作,アイテム名を変更,Option+Command+E / F2
+操作,選択したアイテムを共有,Option+Command+A
+操作,選択したアイテムをプレビュー,Option+Command+P
+操作,削除,Delete / Shift+3
+操作,選択したアイテムを移動,Option+Command+M
+操作,選択中のアイテムのショートカットを追加,Ctrl+Command+R
+操作,選択したアイテムにスターを追加または削除します,Option+Command+S
+操作,直前の操作を元に戻す,Command+Z
+操作,最後に元に戻した操作をやり直す,Command+Y
+操作,ファイルのホバーカードを表示します,Option+右矢印キー

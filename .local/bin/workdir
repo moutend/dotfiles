@@ -1,0 +1,4 @@
+#!/usr/bin/env zsh
+
+message=$(basename "$PWD")
+printf '%s\n' "${message}" | tee /dev/tty | say -r 480 &

@@ -1,0 +1,54 @@
+#!/usr/bin/env bash
+
+if [[ $# -eq 0 ]]; then
+  printf 'usage: webloc URL\n' >&2
+  exit 1
+fi
+
+url="$1"
+
+fallback_name="${url#http://}"
+fallback_name="${fallback_name#https://}"
+fallback_name="${fallback_name%%/*}"
+fallback_name="${fallback_name%%\?*}"
+fallback_name="${fallback_name%%#*}"
+
+html="$(curl --location --silent --show-error --fail "$url" 2>/dev/null || true)"
+title="$(
+  printf '%s' "$html" \
+    | tr '\n\r' '  ' \
+    | sed -n 's/.*<[Tt][Ii][Tt][Ll][Ee][^>]*>[[:space:]]*\([^<][^<]*\)[[:space:]]*<\/[Tt][Ii][Tt][Ll][Ee]>.*/\1/p' \
+    | sed 's/^[[:space:]]*//; s/[[:space:]]*$//'
+)"
+
+if [[ -n "$title" ]]; then
+  name="$title"
+else
+  name="$fallback_name"
+fi
+
+name="$(
+  printf '%s' "$name" \
+    | tr '/:' '__' \
+    | tr -d '\000-\037' \
+    | sed 's/^[[:space:]]*//; s/[[:space:]]*$//'
+)"
+
+if [[ -z "$name" ]]; then
+  name="$fallback_name"
+fi
+
+escaped_url="${url//&/&amp;}"
+escaped_url="${escaped_url//</&lt;}"
+escaped_url="${escaped_url//>/&gt;}"
+
+cat << EOF > "${HOME}/Desktop/${name}.webloc"
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>URL</key>
+	<string>${escaped_url}</string>
+</dict>
+</plist>
+EOF

@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+set -xeuo pipefail
+
+if [[ $# -eq 0 || ! -f "$1" ]]; then
+  exit 0
+fi
+
+audio_dir=$(cd "$(dirname "$1")" && pwd -P)
+audio_file="${audio_dir}/$(basename "$1")"
+
+if [[ "$(uname -s)" == "Darwin" ]]; then
+  defaults write .GlobalPreferences com.apple.sound.beep.sound "${audio_file}"
+fi

@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+set -xeuo pipefail
+
+docker container rm --force $(docker container ls --all --quiet)
+docker volume prune --force

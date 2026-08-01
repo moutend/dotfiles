@@ -1,0 +1,33 @@
+[user]
+    name = Yoshiyuki Koyanagi
+    email = moutend@gmail.com
+
+[alias]
+    a = add
+    b = branch
+    c = commit
+    cp = cherry-pick
+    d = diff
+    l = log --name-status --abbrev-commit
+    s = switch
+    sl = shortlog
+    t = tag
+    w = worktree
+    st = status -sb
+
+[color]
+    ui = false
+
+[core]
+    quotepath = false
+    editor = vim
+    pager = vim -
+
+[ghq]
+    root = ~/ghq
+
+[filter "lfs"]
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
+    clean = git-lfs clean -- %f

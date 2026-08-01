@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+Dir.glob("*.aiff").each do |input|
+  output = File.basename(input, ".aiff") + ".wav"
+  system("sox", input, output)
+end

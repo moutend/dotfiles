@@ -1,0 +1,129 @@
+カテゴリ,アクション,ショートカット
+編集,やり直し,Command+Y / Command+Shift+Z / F4
+編集,グループ化,Option+Shift+→
+編集,グループ化を解除,Option+Shift+←
+編集,コピー,Command C
+編集,スマートフィルの候補を使用します,Command +Shift+Y
+編集,スマートフィルの候補を使用しません,Command +Shift+Option+D
+編集,メモを挿入 / 編集,Shift+F2
+編集,リンクを挿入,Command K
+編集,リンクを開く,Option+Enter
+編集,下方向へコピー,Command D
+編集,値のみ貼り付け,Command +Shift+V
+編集,元に戻す,Command Z
+編集,入力ツールのオン、オフ,Command +Shift+K
+編集,入力ツールを選択,Command +Option+Shift+K
+編集,切り取り,Command X
+編集,単語の定義を調べる,Command +Shift+Y
+編集,右方向へコピー,Command R
+編集,新しいシートを挿入,Shift+F11 / Option+Shift+F1
+編集,書式なしで貼り付け,Command +Shift+V
+編集,書式のみ貼り付け,Command +Option+V
+編集,現在の日付と時刻を挿入,Command +Option+Shift+;
+編集,現在の日付を挿入,Command +;
+編集,現在の時刻を挿入,Command +Shift+;
+編集,範囲へコピー,Command +Enter
+編集,絶対参照、相対参照（数式の入力時）,F4
+編集,行 / 列を削除、または [削除] メニューを開く,Command +Option+- / Command +-
+編集,行 / 列を挿入、または [挿入] メニューを開く,Command +Option+Shift+= / Command +Option+= / Command +Shift+= / Command +=
+編集,貼り付け,Command V
+編集,配列数式を挿入,Command +Shift+Enter
+メニュー,[ツール] メニュー,Ctrl+Option+T
+メニュー,[データ] メニュー,Ctrl+Option+D
+メニュー,[ファイル] メニュー,Ctrl+Option+F
+メニュー,[ヘルプ] メニュー,Ctrl+Option+H
+メニュー,[ユーザー補助機能] メニュー,Ctrl+Option+A
+メニュー,[挿入] メニュー,Ctrl+Option+I
+メニュー,[編集] メニュー,Ctrl+Option+E
+メニュー,[表示] メニュー,Ctrl+Option+V
+メニュー,[表示形式] メニュー,Ctrl+Option+O / Ctrl+1
+メニュー,クイック アクセス,Option+.
+メニュー,コンテキスト メニュー,Command +Shift+\ / Shift+F10
+メニュー,シートメニューを表示,Option+Shift+S
+メニュー,シートリストを表示,Shift+Option+K
+メニュー,メニューを検索,Option+/ / Ctrl+Option+Z
+メニュー,拡張機能メニュー,Ctrl+Option+N
+メニュー,表の列メニュー,Command +Option+\
+書式,上枠線を適用,Option+Shift+1
+書式,下枠線を適用,Option+Shift+3
+書式,下線を引く,Command U / Command 4
+書式,中央揃え,Command +Shift+E
+書式,取り消し線を付ける,Command +Shift+X / Command 5
+書式,右揃え,Command +Shift+R
+書式,右枠線を適用,Option+Shift+2
+書式,外枠線を適用,Option+Shift+7 / Ctrl+Shift+7 / Command +Shift+7
+書式,太字,Command B / Command 2
+書式,左揃え,Command +Shift+L
+書式,左枠線を適用,Option+Shift+4
+書式,数値形式: パーセンテージ,Ctrl+Shift+5
+書式,数値形式: 指数,Ctrl+Shift+6
+書式,数値形式: 数値,Ctrl+Shift+1
+書式,数値形式: 日付,Ctrl+Shift+3
+書式,数値形式: 時刻,Ctrl+Shift+2
+書式,数値形式: 通貨,Ctrl+Shift+4
+書式,斜体,Command I / Command 3
+書式,書式をクリア,Command \
+書式,枠線を削除,Option+Shift+6 / Command +Shift+-
+書式,数値形式: 自動,Command +Shift+`
+データ,データ クリーンアップの候補を表示,Command +Option+X
+データ,グラフを挿入,Option+F1
+確認,コメントを挿入,Command +Option+M
+確認,スペルチェック,F7
+選択,すべて選択,Command A / Command Shift Space / Command Shift 8
+選択,列を選択,Ctrl Space
+選択,行を選択,Shift Space
+スクリーンリーダーのサポート,グラフのコンテンツを集計,Ctrl+Option+Shift+V
+スクリーンリーダーのサポート,コメントのアンカーを読み上げる,Ctrl+Command A Ctrl+Command A
+スクリーンリーダーのサポート,コメントを読み上げる,Ctrl+Command A Ctrl+Command C
+スクリーンリーダーのサポート,スクリーンリーダーのサポートを切り替え,Command +Option+Z
+スクリーンリーダーのサポート,列を読み上げる,Ctrl+Option+Shift+C
+スクリーンリーダーのサポート,行を読み上げる,Ctrl+Option+Shift+R
+ファイル コマンド,印刷,Command P / Command +F2
+ファイル コマンド,開く,Command O
+表示,すべてのコントロールを表示,Command +Option+'
+表示,すべてのコントロールを非表示,Command +Option+'
+表示,すべての数式を表示,Ctrl+`
+表示,グループを展開,Option+Shift+↓
+表示,グループを折りたたむ,Option+Shift+↑
+表示,コンパクト コントロール,Ctrl+Shift+F / Command +Option+R
+表示,列の非表示を解除,Command +Shift+0
+表示,列を非表示,Command +Option+0 / Command 0
+表示,現在のコントロールを表示,Command +'
+表示,現在のコントロールを非表示,Command +'
+表示,行の非表示を解除,Command +Shift+9
+表示,行を非表示,Command +Option+9 / Command 9
+表示,全画面,Command +F1
+表示,数式バーを表示,Command +Shift+U
+ナビゲーション,アクティブセルまでスクロール,Command +Backspace
+ナビゲーション,キーボードショートカットを表示,Command /
+ナビゲーション,シートの先頭に移動,Command Home
+ナビゲーション,シートの末尾に移動,Command End
+ナビゲーション,スマートフィル ウィジェットにフォーカスします,Command +Shift+Option+'
+ナビゲーション,データ探索,Command +Option+Shift+I
+ナビゲーション,データ探索を開く,Option+Shift+X
+ナビゲーション,フィルタ メニューを開く,Ctrl+Command R
+ナビゲーション,プロアクティブな候補ワードにフォーカスする,Command +Option+;
+ナビゲーション,ポップアップにフォーカス,Ctrl+Command E Ctrl+Command P
+ナビゲーション,ユーザーまたはグループの情報を表示,Option+→
+ナビゲーション,ライブ編集を表示,Command +Option+Shift+R
+ナビゲーション,前のコメントに移動,Ctrl+Command P Ctrl+Command C
+ナビゲーション,前のシートに移動,Command +Shift+PageUp / Option+↑ / Command +PageUp
+ナビゲーション,前のシートを選択,Command +Option+[
+ナビゲーション,前の編集に移動,Ctrl+Option+J / Ctrl+Command P Ctrl+Command R
+ナビゲーション,名前付き範囲ボックスにフォーカス,Command J
+ナビゲーション,変更履歴を表示,Command +Option+Shift+H
+ナビゲーション,検索,Command F
+ナビゲーション,検索と置換,Command +Shift+H
+ナビゲーション,次のコメントに移動,Ctrl+Command N Ctrl+Command C
+ナビゲーション,次のシートに移動,Command +Shift+PageDown / Option+↓ / Command +PageDown
+ナビゲーション,次のシートを選択,Command +Option+]
+ナビゲーション,次の編集に移動,Ctrl+Option+K / Ctrl+Command N Ctrl+Command R
+ナビゲーション,現在のコメントを入力,Ctrl+Command E Ctrl+Command C
+ナビゲーション,現在のコントロールにフォーカス,Command +Shift+'
+ナビゲーション,矢印キーでサイドバーのサイズを変更する,Option+W
+ナビゲーション,範囲に移動,Ctrl+G / F5
+ナビゲーション,編集領域からフォーカスを外す,Command +Option+Shift+M
+ナビゲーション,行の先頭に移動,Home
+ナビゲーション,行の末尾に移動,End
+ナビゲーション,要約情報にフォーカス,Option+Shift+Q
+ヘルプ,ヘルプセンター,Shift+F1 / F1

@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+Dir.glob("*.caf").each do |input|
+  output = File.basename(input, ".caf") + ".mp3"
+  system("ffmpeg", "-i", input, "-ac", "1", output)
+end
