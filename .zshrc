@@ -19,6 +19,7 @@ SAVEHIST=1000000
 
 alias c='workdir'
 alias cx='codex exec'
+alias cxw='codex exec -s workspace-write'
 alias du='du -sh'
 alias gb='go build'
 alias gf='goimports -w . && go fmt ./...'
