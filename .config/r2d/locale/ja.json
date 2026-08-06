@@ -369,5 +369,12 @@
   "❽": "丸数字の8",
   "❾": "丸数字の9",
   "❿": "丸数字の10",
-  "✓": "チェックマーク"
+  "✓": "チェックマーク",
+  "⌘": "Command key",
+  "⇧": "Shift key",
+  "⌥": "Option key",
+  "⌃": "Control key",
+  "⌤": "Enter key",
+  "↩": "Return key",
+  "⇪": "Caps lock key"
 }
