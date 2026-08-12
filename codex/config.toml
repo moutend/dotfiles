@@ -25,3 +25,11 @@ web_search = "live"
 
 [sandbox_workspace_write]
 network_access = true
+
+[mcp_servers.xcode]
+command = "xcrun"
+args = ["mcpbridge"]
+
+[mcp_servers.xcodebuildmcp]
+command = "npx"
+args = ["-y", "xcodebuildmcp@latest", "mcp"]
