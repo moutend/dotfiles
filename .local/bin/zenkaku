@@ -1,0 +1,71 @@
+#!/usr/bin/env perl
+
+use strict;
+use warnings;
+use Encode qw(encode);
+use Getopt::Long qw(GetOptions :config no_auto_abbrev no_ignore_case);
+
+sub usage {
+    print <<'USAGE';
+Usage: zenkaku [-i INPUT] [-o OUTPUT]
+
+Convert ASCII letters, digits, and symbols (0x21-0x7E) to their
+fullwidth Unicode equivalents. ASCII spaces and non-ASCII characters
+are left unchanged.
+
+Options:
+  -i, --input FILE   Read from FILE instead of standard input
+  -o, --output FILE  Write to FILE instead of standard output
+  -h, --help         Show this help
+USAGE
+}
+
+my ($input, $output, $help);
+
+GetOptions(
+    'input|i=s'  => \$input,
+    'output|o=s' => \$output,
+    'help|h'     => \$help,
+) or exit 2;
+
+if ($help) {
+    usage();
+    exit 0;
+}
+
+if (@ARGV) {
+    print STDERR "zenkaku: unexpected argument: $ARGV[0]\n";
+    exit 2;
+}
+
+my $data;
+if (defined $input) {
+    open my $fh, '<:raw', $input
+        or die "zenkaku: cannot open input '$input': $!\n";
+    local $/;
+    $data = <$fh>;
+    close $fh
+        or die "zenkaku: cannot close input '$input': $!\n";
+} else {
+    binmode STDIN, ':raw'
+        or die "zenkaku: cannot set standard input to binary mode: $!\n";
+    local $/;
+    $data = <STDIN>;
+}
+
+$data = '' unless defined $data;
+$data =~ s/([\x21-\x7e])/encode('UTF-8', chr(ord($1) + 0xfee0))/ge;
+
+if (defined $output) {
+    open my $fh, '>:raw', $output
+        or die "zenkaku: cannot open output '$output': $!\n";
+    print {$fh} $data
+        or die "zenkaku: cannot write output '$output': $!\n";
+    close $fh
+        or die "zenkaku: cannot close output '$output': $!\n";
+} else {
+    binmode STDOUT, ':raw'
+        or die "zenkaku: cannot set standard output to binary mode: $!\n";
+    print STDOUT $data
+        or die "zenkaku: cannot write standard output: $!\n";
+}
