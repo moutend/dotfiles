@@ -1,0 +1,159 @@
+#!/usr/bin/env bash
+
+set -u
+
+usage() {
+  cat <<'EOF'
+Usage: allplay [-e EXTENSION]...
+
+Play audio files in the current directory in Unicode ascending order.
+The default extension is wav.
+
+Options:
+  -e, --extension EXTENSION  Include an extension (may be repeated)
+  -h, --help                 Show this help
+
+Press Ctrl-C once to skip the current file. Press it again within 0.8
+seconds to stop allplay.
+EOF
+}
+
+extensions=()
+
+while (($# > 0)); do
+  case $1 in
+    -e|--extension)
+      if (($# < 2)); then
+        printf 'allplay: %s requires an argument\n' "$1" >&2
+        exit 2
+      fi
+      extension=${2#.}
+      if [[ -z $extension || $extension == */* ]]; then
+        printf 'allplay: invalid extension: %s\n' "$2" >&2
+        exit 2
+      fi
+      extensions+=("$extension")
+      shift 2
+      ;;
+    --extension=*)
+      extension=${1#*=}
+      extension=${extension#.}
+      if [[ -z $extension || $extension == */* ]]; then
+        printf 'allplay: invalid extension: %s\n' "${1#*=}" >&2
+        exit 2
+      fi
+      extensions+=("$extension")
+      shift
+      ;;
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    --)
+      shift
+      if (($# > 0)); then
+        printf 'allplay: unexpected argument: %s\n' "$1" >&2
+        exit 2
+      fi
+      ;;
+    *)
+      printf 'allplay: unknown option: %s\n' "$1" >&2
+      usage >&2
+      exit 2
+      ;;
+  esac
+done
+
+if ((${#extensions[@]} == 0)); then
+  extensions=(wav)
+fi
+
+if command -v afplay >/dev/null 2>&1; then
+  player=(afplay)
+elif command -v play >/dev/null 2>&1; then
+  player=(play)
+else
+  printf 'allplay: neither afplay nor play was found\n' >&2
+  exit 127
+fi
+
+files=()
+if command -v fd >/dev/null 2>&1; then
+  fd_options=(--max-depth 1 --type f --hidden --no-ignore)
+  for extension in "${extensions[@]}"; do
+    fd_options+=(--extension "$extension")
+  done
+  while IFS= read -r file; do
+    files+=("${file#./}")
+  done < <(fd "${fd_options[@]}" . | LC_ALL=C sort)
+else
+  for extension in "${extensions[@]}"; do
+    for file in ./*."$extension" ./.*."$extension"; do
+      [[ -f $file ]] && files+=("${file#./}")
+    done
+  done
+  if ((${#files[@]} > 0)); then
+    while IFS= read -r file; do
+      sorted_files+=("$file")
+    done < <(printf '%s\n' "${files[@]}" | LC_ALL=C sort -u)
+    files=("${sorted_files[@]}")
+  fi
+fi
+
+player_pid=
+reset_pid=
+interrupt_armed=0
+stop_all=0
+
+reset_interrupt() {
+  interrupt_armed=0
+  reset_pid=
+}
+
+handle_interrupt() {
+  if ((interrupt_armed)); then
+    stop_all=1
+    if [[ -n $reset_pid ]]; then
+      kill "$reset_pid" 2>/dev/null || true
+      reset_pid=
+    fi
+  else
+    interrupt_armed=1
+    (sleep 0.8; kill -USR1 "$$" 2>/dev/null) &
+    reset_pid=$!
+  fi
+
+  if [[ -n $player_pid ]]; then
+    kill -TERM "$player_pid" 2>/dev/null || true
+  fi
+}
+
+cleanup() {
+  if [[ -n $player_pid ]]; then
+    kill -TERM "$player_pid" 2>/dev/null || true
+  fi
+  if [[ -n $reset_pid ]]; then
+    kill "$reset_pid" 2>/dev/null || true
+  fi
+}
+
+trap handle_interrupt INT
+trap reset_interrupt USR1
+trap cleanup EXIT
+trap 'cleanup; exit 143' TERM HUP
+
+for file in "${files[@]}"; do
+  ((stop_all)) && break
+
+  printf '%s\n' "$file"
+  "${player[@]}" "./$file" &
+  player_pid=$!
+
+  while kill -0 "$player_pid" 2>/dev/null; do
+    wait "$player_pid" 2>/dev/null || true
+  done
+  wait "$player_pid" 2>/dev/null || true
+  player_pid=
+done
+
+exit 0
