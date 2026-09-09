@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+xcrun swift-format format --recursive --parallel --in-place .
